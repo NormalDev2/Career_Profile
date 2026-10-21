@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Your Name] | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">[Your Initials / Name]</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Intro Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <!-- REPLACE: Put your photo filename in 'src', e.g., src="profile.jpg" -->
+        <img src="https://via.placeholder.com/160" alt="Profile Photo" class="profile-img" />
+        
+        <h1>Hi, I'm <span class="highlight">[Your Full Name]</span> 👋</h1>
+        <p class="tagline">[Your Current Role / Major, e.g., B.Tech Computer Science Student at SIT, Pune]</p>
+        <p class="bio">
+          <!-- REPLACE: Brief 1-2 sentence introduction -->
+          Welcome to my digital space. I am passionate about technology, software development, 
+          and exploring artificial intelligence tools to build creative solutions.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-card">
+          <p>
+            <!-- REPLACE: Detailed introduction about your background, interests, and goals -->
+            I am currently an undergraduate engineering student at Symbiosis Institute of Technology. 
+            I enjoy problem-solving and turning ideas into functional software. Outside of academics, 
+            I actively experiment with modern tech stacks, Generative AI workflows, and open-source contributions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <span class="skill-tag">HTML5 & CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Git & GitHub</span>
+          <span class="skill-tag">Generative AI Tools</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Minimum 2 required) -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          
+          <!-- Project 1 -->
+          <article class="project-card">
+            <!-- REPLACE: Add your project screenshot/image here -->
+            <img src="https://via.placeholder.com/400x220" alt="Project 1 Preview" class="project-img" />
+            <div class="project-info">
+              <h3>[Project Title 1]</h3>
+              <p>
+                [Brief description of what this project does, the problem it solves, 
+                and key features you implemented.]
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="card-link">Live Demo →</a>
+                <a href="#" target="_blank" class="card-link">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <!-- REPLACE: Add your project screenshot/image here -->
+            <img src="https://via.placeholder.com/400x220" alt="Project 2 Preview" class="project-img" />
+            <div class="project-info">
+              <h3>[Project Title 2]</h3>
+              <p>
+                [Brief description of your second project, such as a machine learning model, 
+                Python script, or an interactive web app.]
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>AI / APIs</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="card-link">Live Demo →</a>
+                <a href="#" target="_blank" class="card-link">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+      <div class="container text-center">
+        <h2 class="section-title">Connect With Me</h2>
+        <p class="contact-desc">Feel free to reach out for collaborations or just a friendly chat!</p>
+        <div class="contact-links">
+          <!-- REPLACE: Add your email, LinkedIn, and GitHub profile URLs -->
+          <a href="mailto:your.email@example.com" class="btn btn-primary">Email Me</a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn btn-secondary">LinkedIn</a>
+          <a href="https://github.com/yourusername" target="_blank" class="btn btn-secondary">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© <span id="year"></span> [Your Name]. Built with HTML, CSS & Generative AI assistance.</p>
+  </footer>
+
+  <script>
+    // Automatically sets current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
