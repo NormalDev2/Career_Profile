@@ -9,7 +9,7 @@ int main(){
 
     for(i = 1; i < 5; i++){
         sum = sum + i;
-        prinf("i = %d sum = %d\n", i, sum);
+        printf("i = %d sum = %d\n", i, sum);
 
     }
 
